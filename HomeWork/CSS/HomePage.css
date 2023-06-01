@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#images {
+  margin-top: 100px;
+}
+.img-overlay img {
+  transition: 0.3s ease;
+}
+.img-overlay:hover img {
+  transform: scale(1.1);
+}
+
+#test{
+  background-color: black;
+  height: 1000px;
+}
+
+
+.carousel-item{
+  height: 35rem;
+  background: #777;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.overlay-image{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top:0;
+  background-position: center;
+  background-size: cover;
+}
+h3,h5{
+  color: #777;
+}
+h1{
+  font-family: serif;
+}
