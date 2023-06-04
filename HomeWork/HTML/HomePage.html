@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/HomePage.css" />
-
-    <title>Document</title>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/mr-bubble');
+</style>
+  <title>Document</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
@@ -34,7 +36,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Calculators
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
                   <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
@@ -55,7 +57,7 @@
     </nav>
 
 
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
@@ -64,32 +66,32 @@
 
       <div class="carousel-inner">
         <div class="carousel-item">
-          <div class="overlay-image" style="background-image: url(../Images/victor-freitas-WvDYdXDzkhs-unsplash.jpg)"></div>
+          <div class="overlay-image" id="carousel1"></div>
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Example headline.</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-dark" href="#">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="overlay-image" style="background-image: url(../Images/pexels-tembela-bohle-2803158.jpg)"></div>
+          <div class="overlay-image" id="carousel2"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p><a class="btn btn-lg btn-dark" href="#">Learn more</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item active">
-          <div class="overlay-image" style="background-image: url(../Images/Bilkent.jpg)"></div>
+          <div class="overlay-image" id="carousel3"></div>
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
               <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-dark" href="#">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -102,63 +104,96 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+   
     </div>
-    <div class="container text-center mt-5">
+
+
+    <div class="container-fluid mt-5 text-center underline">
       <h3>Ready to start to your journey with us ?</h3>
       <h5>Find your calorie need and lift with us</h5>
     </div>
-    
-    <section class="container mt-5 text-center" id="cards">
-      <div class="container text-center mt-5">
-      <h1>PRODUCTS AND SERVICES</h1>
+<section class="container">
+
+
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-3 img-overlay">
+        <img src="../Images/oYqCjbZc-FZn0WY8j2ZtA7-qdytUXwtasj0_2OqKKPw.jpg" class="rounded-circle">
+        <h2>Kadir Aygumus</h2>
       </div>
-      <div class="row mt-5">
+      <div class="col-lg-3 img-overlay text-center">
+        <img src="../Images/oYqCjbZc-FZn0WY8j2ZtA7-qdytUXwtasj0_2OqKKPw.jpg" class="rounded-circle">
+        <h2>Emir Tuna Besli</h2>
+      </div>
+      <div class="col-lg-3 img-overlay text-center">
+        <img src="../Images/oYqCjbZc-FZn0WY8j2ZtA7-qdytUXwtasj0_2OqKKPw.jpg" class="rounded-circle">
+        <h2>Ege Iliman</h2>
+      </div>
+      
+      <div class="col-lg-3 img-overlay text-center">
+        <img src="../Images/oYqCjbZc-FZn0WY8j2ZtA7-qdytUXwtasj0_2OqKKPw.jpg" class="rounded-circle">
+        <h2>Ahmet Eren Arslanoglu</h2>
+      </div>
+    </div>  
+  </section>
+   
+
+    <section class="container-fluid mt-5">
+  
+      <div class="row text-center bg-body-tertiary p-5 mt-5" style="border-bottom: 1px grey solid; border-top: 1px grey solid;">
+        <h1>PRODUCTS AND SERVICES</h1>
+      </div>
+      <div class="row text-center mt-5 justify-content-center " >
+        <div class="col-md-4 ">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam similique ipsa reiciendis aperiam, delectus repellat aut hic voluptatum adipisci quisquam dolore nobis minima, dolorum, odit consequuntur mollitia pariatur iste.</p>
+        </div>
         <div class="col-md-4">
           <div class="img-overlay">
             <a href="page1.html">
-              <img src="../Images/BILFIT.png" class="img-fluid rounded" alt="Image 1">
+              <img src="../Images/carousel1.jpg" class="img-fluid rounded" alt="Image 1">
+              <span>Image 1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row services justify-content-center ">    
+        <div class="col-md-4 ">
+          <div class="img-overlay">
+            <a href="page1.html">
+              <img src="../Images/carousel2.jpg"  class="img-fluid rounded" alt="Image 1">
               <span>Image 1</span>
             </a>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="img-overlay">
-            <a href="page2.html">
-              <img src="../Images/BILFIT.png" class="img-fluid rounded" alt="Image 2">
-              <span>Image 2</span>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-overlay">
-            <a href="page3.html">
-              <img src="../Images/BILFIT.png" class="img-fluid rounded" alt="Image 3">
-              <span>Image 3</span>
-            </a>
-          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam similique ipsa reiciendis aperiam, delectus repellat aut hic voluptatum adipisci quisquam dolore nobis minima, dolorum, odit consequuntur mollitia pariatur iste.</p>
         </div>
       </div>
-      <div class="row justify-content-center">
-
+      <div class="row services justify-content-center">
         <div class="col-md-4">
-          <div class="img-overlay">
-            <a href="page3.html">
-              <img src="../Images/BILFIT.png" class="img-fluid rounded" alt="Image 3">
-              <span>Image 4</span>
-            </a>
-          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam similique ipsa reiciendis aperiam, delectus repellat aut hic voluptatum adipisci quisquam dolore nobis minima, dolorum, odit consequuntur mollitia pariatur iste.</p>
         </div>
         <div class="col-md-4">
           <div class="img-overlay">
-            <a href="page3.html">
-              <img src="../Images/BILFIT.png" class="img-fluid rounded" alt="Image 3">
-              <span>Image 5</span>
+            <a href="page1.html">
+              <img src="../Images/carousel3.jpg" class="img-fluid rounded" alt="Image 1">
+              <span>Image 1</span>
             </a>
           </div>
         </div>
       </div>
     </section>
      
+    <footer class="text-center text-white mt-5" style="background-color: #f1f1f1; ">
+      <div class="container p-5">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima fugit quidem molestias qui in at inventore quae consectetur voluptatum repudiandae perspiciatis dicta, odit beatae architecto. Tempore veniam at odit!</p>
+      </div>
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+    </footer>
+
 
 </body>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>  </body>

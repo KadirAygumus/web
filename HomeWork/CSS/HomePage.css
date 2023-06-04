@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
 }
+body{
+  font-family: 'MrBubbleFont', sans-serif;
+                                                
+}
 #images {
   margin-top: 100px;
 }
@@ -9,18 +13,12 @@
   transition: 0.3s ease;
 }
 .img-overlay:hover img {
+
   transform: scale(1.1);
 }
 
-#test{
-  background-color: black;
-  height: 1000px;
-}
-
-
 .carousel-item{
   height: 35rem;
-  background: #777;
   color: white;
   position: relative;
   background-position: center;
@@ -35,9 +33,40 @@
   background-position: center;
   background-size: cover;
 }
+#carousel1{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/carousel1.jpg);
+
+}
+#carousel2{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/carousel2.jpg);
+
+}
+#carousel3{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/carousel3.jpg);
+
+}
+
 h3,h5{
   color: #777;
 }
-h1{
-  font-family: serif;
+
+.feature-divider{
+  width: 80%;
+}
+.services{
+  margin-top: 10em;
+}
+section.container{
+  margin-top: 150px;
+}
+.row h1{
+  margin-bottom: 70px;
+}
+.underline{
+  border-bottom: 2px rgb(217, 217, 217) solid; 
+  padding-bottom: 20px;
+  width: fit-content;
+}
+.col-lg-3{
+  width: 140px; margin: 0px 40px;
 }

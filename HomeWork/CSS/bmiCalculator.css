@@ -1,0 +1,14 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/bmi.jpg);
+    color:wheat;
+}
+
+.container{
+    margin-top: 300px;
+}
+#result{
+    font-size: 100px;
+}
